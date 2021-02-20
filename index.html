@@ -1,0 +1,48 @@
+
+<head>
+  <title>
+    Gallery
+  </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="main.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript" src="script.js"></script>
+   <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body class="bg-light">
+<!-- Page Content -->
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <div class="form-inline flex-nowrap bg-light mx-0 mx-lg-auto rounded p-1">
+    <input id="search_bar" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onkeyup="getSearch()">
+    <!-- <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button> -->
+  </div>
+</nav>
+
+
+  <div class="row text-center text-lg-left bg-light nopadding" id="container">
+    <h1> No Images Found :(</h1>
+    <div id="loader-wrapper"><div id="loader"></div><div class="loader-section section-left"></div><div class="loader-section section-right"></div></div>
+  </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-img-wrap">
+        <img class="imgclass img-thumbnail modal-img">
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
